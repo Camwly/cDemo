@@ -18,5 +18,8 @@
     <ClCompile Include="fileos.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="异常.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

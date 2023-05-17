@@ -1,2 +1,3 @@
-﻿  Test.cpp
+﻿  异常.cpp
+G:\c++project\Project1\异常.cpp(37,2): warning C4286: “MyException”: 由基类(“const std::exception &”)在行 33 上捕获
   Project1.vcxproj -> G:\c++project\Project1\x64\Debug\Project1.exe
