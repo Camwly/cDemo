@@ -1,14 +1,6 @@
-﻿  异常.cpp
-G:\c++project\Project1\异常.cpp(14,3): warning C4297: “testExecpiton”: 假定函数不引发异常，但确实发生了
-G:\c++project\Project1\异常.cpp(14,3): message : 在函数上指定了 __declspec(nothrow)、throw()、noexcept(true)或 noexcept
-G:\c++project\Project1\异常.cpp(17,3): warning C4297: “testExecpiton”: 假定函数不引发异常，但确实发生了
-G:\c++project\Project1\异常.cpp(17,3): message : 在函数上指定了 __declspec(nothrow)、throw()、noexcept(true)或 noexcept
-G:\c++project\Project1\异常.cpp(21,3): warning C4297: “testExecpiton”: 假定函数不引发异常，但确实发生了
-G:\c++project\Project1\异常.cpp(21,3): message : 在函数上指定了 __declspec(nothrow)、throw()、noexcept(true)或 noexcept
-G:\c++project\Project1\异常.cpp(25,3): warning C4297: “testExecpiton”: 假定函数不引发异常，但确实发生了
-G:\c++project\Project1\异常.cpp(25,3): message : 在函数上指定了 __declspec(nothrow)、throw()、noexcept(true)或 noexcept
-G:\c++project\Project1\异常.cpp(29,3): warning C4297: “testExecpiton”: 假定函数不引发异常，但确实发生了
-G:\c++project\Project1\异常.cpp(29,3): message : 在函数上指定了 __declspec(nothrow)、throw()、noexcept(true)或 noexcept
-G:\c++project\Project1\异常.cpp(45,2): warning C4286: “MyException”: 由基类(“const std::exception &”)在行 41 上捕获
+﻿  动态内存.cpp
+G:\c++project\Project1\动态内存.cpp(1,1): warning C4828: 文件包含在偏移 0x17a 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  LINK : 没有找到 G:\c++project\Project1\x64\Debug\Project1.exe 或上一个增量链接没有生成它；正在执行完全链接
+异常.obj : error LNK2005: "int __cdecl mainP(void)" (?mainP@@YAHXZ) 已经在 动态内存.obj 中定义
 MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
 G:\c++project\Project1\x64\Debug\Project1.exe : fatal error LNK1120: 1 个无法解析的外部命令
