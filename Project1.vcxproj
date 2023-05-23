@@ -131,6 +131,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="fileos.cpp" />
+    <ClCompile Include="signal.cpp" />
     <ClCompile Include="动态内存.cpp" />
     <ClCompile Include="多态.cpp" />
     <ClCompile Include="异常.cpp" />
