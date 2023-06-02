@@ -39,5 +39,22 @@
     <ClCompile Include="signal.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="线程.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cvTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testExtern.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternCode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Extern.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

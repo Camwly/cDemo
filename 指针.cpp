@@ -19,9 +19,20 @@ int* testPoint() {
 	return arr;
 }
 
+int sum(int a, int b) {
 
+	return a + b;
+}
 
 int mainP指针() {
+
+
+	//函数指针
+	int (*p)(int, int) = sum;
+	p(1, 2);
+	auto pt = sum;
+	pt(2, 3);
+
 
 	const char* cArr[3] = { "hello 1", "hello 2","hello 3" };
 
@@ -44,10 +55,10 @@ int mainP指针() {
 
 	//指针算术运算
 	int arr[10] = { 1,2,3,4,5,6 };
-	int* pt = arr;
+	int* pr = arr;
 	for (int i = 0; i < 5; i++) {
-		cout << "第" << i << ":" << *pt << endl;
-		pt++;
+		cout << "第" << i << ":" << *pr << endl;
+		pr++;
 	}
 
 

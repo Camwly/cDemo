@@ -1,3 +1,0 @@
-﻿  signal.cpp
-  Project1.vcxproj -> G:\c++project\Project1\x64\Debug\Project1.exe
-G:\c++project\Project1\数据结构.cpp(9): warning C26495: 未初始化变量 Book::price。始终初始化成员变量(type.6)。

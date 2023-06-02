@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -72,6 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <RunCodeAnalysis>true</RunCodeAnalysis>
+    <IncludePath>G:\c++project\Project1\opencv\include\opencv2;G:\c++project\Project1\opencv\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\c++project\Project1\opencv\x64\vc16\bin;G:\c++project\Project1\opencv\x64\vc16\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -111,7 +113,12 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world470d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -130,14 +137,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cvTest.cpp" />
+    <ClCompile Include="ExternCode.cpp" />
     <ClCompile Include="fileos.cpp" />
     <ClCompile Include="signal.cpp" />
+    <ClCompile Include="testExtern.cpp" />
     <ClCompile Include="动态内存.cpp" />
     <ClCompile Include="多态.cpp" />
     <ClCompile Include="异常.cpp" />
     <ClCompile Include="指针.cpp" />
     <ClCompile Include="数据结构.cpp" />
+    <ClCompile Include="线程.cpp" />
     <ClCompile Include="运算符重载.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Extern.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
